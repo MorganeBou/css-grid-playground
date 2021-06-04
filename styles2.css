@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:"top top"
+    "middle-right middle-left"
+    "footer footer ";
+    height: 100%;
+    grid-gap: 5px 5px;
+
+
+
+
+   }
+
+.header{
+    background-color: #009787;
+    grid-area: top;
+    padding:2px;
+}
+
+.sidebar{
+    grid-area: middle-right;
+    background-color: rosybrown;
+    padding:2px;
+}
+
+.main-content{
+    background-color: cornflowerblue;
+    grid-area: middle-left;
+    padding:2px;
+}
+
+.footer{
+background-color: coral;
+    grid-area: footer;
+    padding:2px;
+}

@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    #first-page {
+        display: grid;
+        grid-template-columns: 60px 1fr 1fr 60px;
+        grid-template-rows: 60px 3fr 3fr;
+        height: 100%;
+        font-family: sans-serif;
+        font-size: 12px;
+        grid-template-areas:
+                "nav-button logo search-button button-personnal-space"
+                "main-content main-content main-content main-content "
+                "main-content main-content main-content main-content "
+    }
+
+    .logo-header-small {
+        grid-area: logo;
+    }
+
+    .header-padlock{
+        grid-area:button-personnal-space;
+    }
+
+    .logo-header-large {
+        display: none;
+    }
+
+    .element-upper-nav-large-screen {
+        display: none;
+    }
+
+    .header-lower-nav {
+        display: none;
+    }
+
+    .main-content {
+        grid-area: main-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px 10px;
+        height: 100%;
+    }
+
+    .element-main-content {
+        background-color: #009787;
+        min-height: 100px;
+
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    #first-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 60px 6fr 1fr;
+        height: 100%;
+        font-family: sans-serif;
+        font-size: 12px;
+        grid-template-areas: "logo header_first_line header_first_line header_first_line header_first_line" "logo header_second_line header_second_line header_second_line header_second_line" "main_content main_content main_content main_content main_content " "f f f f f";
+
+    }
+
+    .logo-header-large {
+        grid-area: logo;
+        background-color: whitesmoke;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    img.logo-header-large {
+        width: 40%;
+    }
+
+    .logo-header-small {
+        display: none;
+    }
+
+
+    .header-upper-nav {
+        grid-area: header_first_line;
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr 150px 150px 150px;
+        grid-template-rows: 60px;
+        cursor: pointer;
+        background-color: whitesmoke;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .logo-localisation {
+        object-fit: contain;
+        width: 20%;
+        background-color: rgb(127, 166, 0);
+        border-radius: 6px;
+    }
+
+
+    .element-upper-nav-large-screen {
+        display: grid;
+        height: 40px;
+        border: none;
+    }
+
+
+    button.element-upper-nav-large-screen {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        text-align: center;
+        align-items: center;
+        color: whitesmoke;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: center;
+        white-space: nowrap;
+        border: 0px;
+        text-transform: uppercase;
+    }
+
+    button.element-upper-nav-large-screen:hover {
+        background-color: #006675;
+        transition-delay: 0s, 0s;
+        transition-duration: 0.3s, 0.3s;
+        transition-property: background, color;
+        transition-timing-function: ease, ease;
+    }
+
+    .button-contact {
+        background-color: #009787;
+    }
+
+    .button-open-account {
+        background-color: #006675;
+    }
+
+    .button-personnal-space {
+        background-color: #007d8f;
+        display: grid;
+        grid-template: 1fr / 1fr 3fr;
+    }
+
+    .text-button-personnal-space {
+        margin: 0;
+    }
+
+    .header-padlock {
+        height: 20px;
+        justify-self: end;
+    }
+
+    .header-lower-nav {
+        display: grid;
+        grid-area: header_second_line;
+        grid-template-columns: repeat(8, 1fr);
+        background-color: #f5f5f5;
+        text-align: center;
+        align-items: center;
+        color: #454545;
+        cursor: pointer;
+        list-style: none;
+
+    }
+
+    ul.header-lower-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    li.header-lower-nav {
+        justify-self: center;
+    }
+
+    .main-content {
+        grid-area: main_content;
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr;
+        background-color: coral;
+
+    }
+
+    .element-main-content {
+        border: 1px solid blue;
+    }
+
+    .footer {
+        grid-area: f;
+        background-color: darkslategray;
+    }
+}
+
