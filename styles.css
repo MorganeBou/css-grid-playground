@@ -8,25 +8,22 @@ html, body {
 }
 
 @media (max-width: 900px) {
-    #first-page {
+    #page-container {
         display: grid;
         grid-template-columns: 60px 1fr 1fr 60px;
-        grid-template-rows: 60px 3fr 3fr;
+        grid-template-rows: 60px 3fr 1fr;
         height: 100%;
         font-family: sans-serif;
         font-size: 12px;
-        grid-template-areas:
-                "nav-button logo search-button button-personnal-space"
-                "main-content main-content main-content main-content "
-                "main-content main-content main-content main-content "
+        grid-template-areas: "nav-button logo search-button button-personnal-space" "main-content main-content main-content main-content " "main-content main-content main-content main-content "
     }
 
     .logo-header-small {
         grid-area: logo;
     }
 
-    .header-padlock{
-        grid-area:button-personnal-space;
+    .header-padlock {
+        grid-area: button-personnal-space;
     }
 
     .logo-header-large {
@@ -62,10 +59,10 @@ html, body {
 }
 
 @media (min-width: 900px) {
-    #first-page {
+    #page-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 60px 60px 6fr 1fr;
+        grid-template-rows: 60px 60px 8fr 20%;
         height: 100%;
         font-family: sans-serif;
         font-size: 12px;
@@ -173,8 +170,6 @@ html, body {
         align-items: center;
         color: #454545;
         cursor: pointer;
-        list-style: none;
-
     }
 
     ul.header-lower-nav {
@@ -200,7 +195,75 @@ html, body {
 
     .footer {
         grid-area: f;
-        background-color: darkslategray;
+        background-color: #202123;
+        display: grid;
+        grid-template: 1fr 4fr 1fr/repeat(6, 1fr);
     }
+
+    .footer-social-media {
+        grid-row: 1/2;
+        grid-column: 3/span 2;
+        display: grid;
+        grid-template: 1fr/repeat(5, 1fr);
+        justify-self: center;
+        align-self: center;
+        grid-gap: 10px;
+    }
+
+    .footer-social-media img {
+        background-color: #2c2d31;
+        border-radius: 3px;
+        width: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer-middle {
+        grid-area: 2/1/3/7;
+        font-size: 8px;
+        display: grid;
+        grid-template: 1fr/ 60px repeat(4, 3fr);
+
+    }
+
+    .list-footer-middle p {
+        color: whitesmoke;
+    }
+
+    .list-footer-middle li {
+        color: rgb(196, 196, 192);
+    }
+
+    .header-lower-nav li, .list-footer-middle li {
+        list-style: none;
+    }
+
+    .logo-tree-footer {
+        width: 50%;
+        justify-self: right;
+    }
+
+    .footer-mention {
+        grid-area: 3/1/4/7;
+        background-color: #252629;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: rgb(196, 196, 192);
+        padding: 10px;
+        font-size: 8px;
+    }
+
 }
 
+
+.class1.class2 {
+    /*Tout les class2 qui aussi des class1*/
+}
+
+
+.class1 .class2 {
+    /*Tout les class2 qui sont des enfants de class1*/
+}
