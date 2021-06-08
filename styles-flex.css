@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+
+}
+
+#page-container {
+    font-family: sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.logo-header img {
+    width: 100%;
+}
+
+.header-upper-nav {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-upper-nav button {
+
+    height: 100%;
+
+
+}
+
+.header-lower-nav {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.header-lower-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+.logo-localisation {
+    width: 20px;
+    background-color: #99cc00;
+}
+
+.header-padlock {
+    width: 20px;
+}
+
+.element-upper-nav-large-screen button {
+    display: flex;
+    width: 100%;
+
+}
+
+.button-contact {
+    background-color: #009787;
+
+
+}
+
+.button-open-account {
+    background-color: #006675;
+}
+
+.button-personnal-space {
+    background-color: #007d8f;
+
+}
+
+
+.header-lower-nav li {
+    list-style: none;
+}
