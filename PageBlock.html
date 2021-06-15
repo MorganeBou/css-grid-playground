@@ -11,36 +11,62 @@
 </head>
 <body>
 <div class="header">
-    <img src="logo_credit_patate.png" alt="logo" width="50" height="47">
-    <h2> HEADER</h2>
+    <div class="logo">
+        <img src="logo_credit_patate.png">
+    </div>
+
+
+    <div class="header-upper">
+
+
+                <select id="type-person">
+                    <option value="private person" selected>Vous êtes un particulier</option>
+                </select>
+
+
+                <input id="searchbar" type="search"
+                       placeholder="Rechercher une thématique, un produit ...">
+
+
+
+                <img class="logo-localisation" src="logo_localisation.png">
+
+
+                <button class="element-upper-header button-contact">NOUS CONTACTER</button>
+                <button class="element-upper-header button-open-account">OUVRIR UN COMPTE</button>
+                <button class="element-upper-header button-personnal-space">
+                    <img class="header-padlock" src="padlock.png">
+                    <span class="text-button-personnal-space">MON ESPACE</span>
+                </button>
+        <div class="no-wrap"></div>
+
+
+    </div>
+
+    <div class="header-low">
+
+        <ul class="header-lower-nav">
+            <li href="#">COMPTES & CARTES</li>
+            <li href="#">EPARGNER</li>
+            <li href="#">S'ASSURER</li>
+            <li href="#">EMPRUNTER</li>
+            <li href="#">JEUNES</li>
+            <li href="#">SOCIETAIRES</li>
+            <li href="#">SIMULATION & DEVIS</li>
+            <li>
+                <select href="#">
+                    <option value="advice" selected>NOS CONSEILS
+                </select>
+
+            </li>
+        </ul>
+    </div>
 
 </div>
 
-<div class="first-content">
-    <div>1 Je disparais si tu scrolles vers le bas (position : asbolute) mais je passe SOUS le header</div>
 </div>
 
-
-<div class="second-content">
-   <div>
-       2 Je disparais si tu scrolles vers le bas (position : asbolute) mais je passe SUR le header ... z-index
-   </div>
-</div>
-
-<div class="third-content">
-   <div>
-       3 Je reste à la même place, même si tu scrolles (position : fixed)
-   </div>
-</div>
-
-
-<div class="main-content"> blablabla</div>
-<div class="fourth-content">
-    4 Je fais quoi ????
-</div>
-
-<div class="nav"> Nav</div>
-
+<div class="main-content"></div>
 
 </body>
 </html>

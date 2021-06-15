@@ -1,75 +1,146 @@
 body {
     margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
 }
 
 .header {
-    width: 100%;
-    position: fixed;
+    position: relative;
+    height: 120px;
+}
+
+.logo {
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: #009787;
-    z-index: 5;
-
-
-
+    height: 100%;
+    width: 15%;
+    background-color: white;
+    text-align: center;
 }
 
-.header h2 {
-    color: whitesmoke;
-    font-family: Verdana Geneva sans-serif;
-    font-weight: 900;
-    font-size: 3em;
-    margin-left: 2%;
-    padding: 0;
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.header img {
+.header-upper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 85%;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+#type-person {
+    width: 15%;
     float: left;
-    margin: 1.9em .6em 0 .75em;
+    border: none;
+    color: #007d8f;
+    height: 100%;
+
+
+}
+#searchbar {
+    width: 45%;
+    float: left;
+    border: none;
+    background-color: whitesmoke;
+    height: 90%;
+
+
+}
+.logo-localisation {
+    width:10%;
+    float: left;
+    height: 30px;
+
+
+
 }
 
-.first-content, .second-content, .third-content {
+.button-contact, .button-open-account, .button-personnal-space {
+    width: 11%;
+    height: 60px;
+    color: whitesmoke;
+    border: none;
+}
+
+.button-contact {
+    position: absolute;
+    top: 0;
+    right: 22%;
+    background-color: #009787;
+}
+
+.button-open-account {
+    position: absolute;
+    top: 0;
+    right: 11%;
+    background-color: #006675;
+}
+
+.button-personnal-space {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #007d8f;
+}
+
+img.logo-localisation {
+    width: 20px;
     background-color: #99cc00;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 2px 2px 1em 2px;
 }
 
-div.first-content {
+img.header-padlock {
+    width: 20px;
+}
+
+.no-wrap {
+    clear: both;
+}
+.header-low {
     position: absolute;
-    top: 200px;
-    left: 100px;
+    top: 60px;
+    right: 0;
+    height: 60px;
+    width: 85%;
+    background-color: #f5f5f5;
 }
 
-div.second-content {
-    position: absolute;
-    top: 250px;
-    left: 100px;
-    z-index: 10;
+.header-lower-nav ul {
+    list-style-type: none;
+
 }
 
-div.third-content {
-    position: fixed;
-    top: 200px;
-    right: 100px;
+.header-lower-nav li, .header-lower-nav select {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    float: left;
+    margin: 6px;
+    color: #686868;
+
+
 }
 
+.header-lower-nav select {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 0;
+    font-size: 12px;
+    margin: 0;
+}
 
 
 .main-content {
-    position: absolute;
     height: 900px;
-    background-color: yellow;
-    width: 100%;
-    z-index: -1;
-
-
-}
-
-.nav {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    height: 3em;
-    background-color: cornflowerblue;
-    width: 30%;
-    z-index: 6;
+    background-color: #454545;
 
 }
