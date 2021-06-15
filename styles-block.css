@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #009787;
+    z-index: 5;
+
+
+
+}
+
+.header h2 {
+    color: whitesmoke;
+    font-family: Verdana Geneva sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    margin-left: 2%;
+    padding: 0;
+}
+
+.header img {
+    float: left;
+    margin: 1.9em .6em 0 .75em;
+}
+
+.first-content, .second-content, .third-content {
+    background-color: #99cc00;
+}
+
+div.first-content {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+div.second-content {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    z-index: 10;
+}
+
+div.third-content {
+    position: fixed;
+    top: 200px;
+    right: 100px;
+}
+
+
+
+.main-content {
+    position: absolute;
+    height: 900px;
+    background-color: yellow;
+    width: 100%;
+    z-index: -1;
+
+
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 3em;
+    background-color: cornflowerblue;
+    width: 30%;
+    z-index: 6;
+
+}
